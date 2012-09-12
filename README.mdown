@@ -1,0 +1,27 @@
+# jQuery.fillWidth
+
+Make an element fill its parents width and keep the aspect ratio.
+
+## Usage
+
+
+HTML-Code:
+
+    <div class="some-container">
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+CSS-Code:
+
+    .some-container {
+      width: 600px;
+    }
+
+JS-Code:
+
+    $('.some-container iframe').fillWidth();
+
+## Configuration and Bugrepots
+
+There are currently no configuration options. Feel free to open an issue if you
+have a feature request or run into any problem.
