@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>jQuery.fillWidth</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        padding: 25px 75px;
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      p {
+        margin: 1em 0;
+      }
+      p + h2 {
+        margin-top: 2em;
+      }
+
+      h1, h2, h3 {
+        color: #c03;
+        border-bottom: 1px solid #eee;
+      }
+
+      .some-container {
+        width: 50%;
+        outline: 2px dotted cyan;
+        padding: 15px;
+      }
+    </style>
+</head>
+<body>
+  <h1>jQuery.fillWidth</h1>
+
+  <p>Make an element fill its parents width and keep the aspect ratio</p>
+
+  <h2>Example</h2>
+
+
+  <p>This container has a width of 50%. Resize the browser window to see the effect.</p>
+  <div class="some-container">
+    <iframe width="420" height="315" src="http://www.youtube.com/embed/oHg5SJYRHA0" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+  <script src="https://raw.github.com/noxoc/jquery.fillWidth/master/jquery.fillWidth.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    (function($) {
+     $('.some-container iframe').fillWidth();
+    })(jQuery)
+  </script>
+  </body>
+</html>
